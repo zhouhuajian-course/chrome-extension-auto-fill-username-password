@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "自动填充Github账号密码",
+    "description": "访问Github登录页面可以自动填充账号密码",
+    "version": "1.0.2",
+    "action": {
+      "default_popup": "my_first_extension.html",
+      "default_icon": "my_first_extension.png"
+    },
+    "content_scripts": [
+        {
+          "js": ["scripts/my_first_content.js"],
+          "matches": [
+            "https://gitee.com/login*"
+          ]
+        }
+    ]
+}
